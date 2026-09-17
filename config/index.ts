@@ -1,18 +1,20 @@
 import type { AppInfo } from '@/types/app'
+
 export const APP_ID = `${process.env.NEXT_PUBLIC_APP_ID}`
 export const API_KEY = `${process.env.NEXT_PUBLIC_APP_KEY}`
 export const API_URL = `${process.env.NEXT_PUBLIC_API_URL}`
+
 export const APP_INFO: AppInfo = {
-  title: 'Chat APP',
-  description: '',
-  copyright: '',
+  title: '知壤农技专家',
+  description: '田间问题，现场判断 · 病虫害 / 水肥 / 修剪问答演示',
+  copyright: '知壤 · 答辩演示',
   privacy_policy: '',
-  default_language: 'en',
-  disable_session_same_site: false, // set it to true if you want to embed the chatbot in an iframe
+  default_language: 'zh-Hans',
+  disable_session_same_site: false,
 }
 
 export const isShowPrompt = false
-export const promptTemplate = 'I want you to act as a javascript console.'
+export const promptTemplate = ''
 
 export const API_PREFIX = '/api'
 
